@@ -1,0 +1,3 @@
+C:/Users/mgule/CLionProjects/142_yeni_proje/cmake-build-debug/CMakeFiles/142_yeni_proje.dir
+C:/Users/mgule/CLionProjects/142_yeni_proje/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/mgule/CLionProjects/142_yeni_proje/cmake-build-debug/CMakeFiles/rebuild_cache.dir
