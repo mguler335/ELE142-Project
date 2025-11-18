@@ -1,0 +1,6 @@
+# canvas.cpp is auto-generated, exclude from language stats
+canvas.cpp linguist-generated=true
+
+# Force all .cpp files to be classified as C++
+*.cpp linguist-language=Cpp
+*.h linguist-language=Cpp
