@@ -1,6 +1,6 @@
-# canvas.cpp is auto-generated, exclude from language stats
-canvas.cpp linguist-generated=true
+# Completely exclude canvas.cpp from GitHub language detection
+canvas.cpp linguist-detectable=false
 
-# Force all .cpp files to be classified as C++
+# Force all cpp and h files to be counted as C++
 *.cpp linguist-language=Cpp
-*.h linguist-language=Cpp
+*.h   linguist-language=Cpp
