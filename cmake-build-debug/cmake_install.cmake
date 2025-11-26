@@ -1,8 +1,8 @@
-# Install script for directory: C:/Users/mgule/CLionProjects/142_yeni_proje
+# Install script for directory: C:/Users/mgule/CLionProjects/142_proje_son
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "C:/Program Files (x86)/142_yeni_proje")
+  set(CMAKE_INSTALL_PREFIX "C:/Program Files (x86)/142_proje_son")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "C:/Users/mgule/CLionProjects/142_yeni_proje/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "C:/Users/mgule/CLionProjects/142_proje_son/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

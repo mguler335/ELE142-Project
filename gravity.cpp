@@ -89,11 +89,23 @@ public:
     bool isMotorOn() const { return motorOn_; }
 
     // Rocket ivme + thrust + kütle azalması
+    // Rocket ivme + thrust + kütle azalması
     virtual void update(const Vector& totalForce, double dt) override {
         Vector thrust(0, 0);
 
         if (motorOn_ && exhaustRate_ > 0 && mass_ > 0.1) {
-            Vector dir = velocity_.normalized();
+
+            // --- DÜZELTME BAŞLANGICI ---
+            Vector dir;
+            // Eğer hız neredeyse 0 ise (roket duruyorsa) yönü YUKARI (0, 1) kabul et
+            if (velocity_.magnitude() < 0.00001) {
+                dir = Vector(0, 1);
+            } else {
+                // Hareket halindeyse hız vektörü yönünü kullan
+                dir = velocity_.normalized();
+            }
+            // --- DÜZELTME BİTİŞİ ---
+
             thrust = dir * (exhaustVel_ * exhaustRate_);
             double newMass = mass_ - exhaustRate_ * dt;
             mass_ = (newMass < 0.1 ? 0.1 : newMass);
