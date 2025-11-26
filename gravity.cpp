@@ -51,11 +51,15 @@ public:
 
     virtual ~Body() {}
 
-    // Getters
+    // gravity.cpp -> class Body -> public kısmı
     double getMass() const { return mass_; }
     double getPosX() const { return position_.getX(); }
     double getPosY() const { return position_.getY(); }
 
+// --- BU İKİ SATIRI EKLE ---
+    double getVelX() const { return velocity_.getX(); }
+    double getVelY() const { return velocity_.getY(); }
+// --------------------------
     // Euler / Taylor update (PDF’deki Eş.(3)-(4))
     virtual void update(const Vector& totalForce, double dt) {
         Vector a = totalForce / mass_;

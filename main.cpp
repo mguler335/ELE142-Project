@@ -91,7 +91,7 @@ Gezegen* getGezegenFromUser_UI(int index) {
     auto* p = new Gezegen(
             b->getMass(),
             Vector(b->getPosX(), b->getPosY()),
-            Vector(0, 0)
+            Vector(b->getVelX(), b->getVelY()) // <-- DÜZELTİLDİ: Artık girilen hızı alıyor
     );
 
     delete b;
@@ -107,7 +107,7 @@ Asteroid* getAsteroidFromUser_UI(int index) {
     auto* a = new Asteroid(
             b->getMass(),
             Vector(b->getPosX(), b->getPosY()),
-            Vector(0, 0)
+            Vector(b->getVelX(), b->getVelY()) // <-- DÜZELTİLDİ: Artık girilen hızı alıyor
     );
 
     delete b;
