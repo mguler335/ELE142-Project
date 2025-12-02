@@ -157,7 +157,7 @@ int main() {
     std::cout << "-> Dosya Adi: ";
     std::cin >> filename;
 
-    Universe U(1.0);
+    Universe U(0.1);
 
     // 2. Nesne Sayilari
     printSection("SIMULASYON NESNE ADETLERI");
@@ -215,7 +215,7 @@ int main() {
         // Her 100 adimda bir noktayla ilerleme goster
         if (t % 100 == 0) std::cout << "#" << std::flush;
 
-        U.run(1);
+        U.run(10);
 
         BodyNode* node = U.getList().head();
         int idx = 0;
