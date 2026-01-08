@@ -1,3 +1,0 @@
-C:/Users/mgule/CLionProjects/142_proje_son/cmake-build-debug/CMakeFiles/142_proje_son.dir
-C:/Users/mgule/CLionProjects/142_proje_son/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/mgule/CLionProjects/142_proje_son/cmake-build-debug/CMakeFiles/rebuild_cache.dir
